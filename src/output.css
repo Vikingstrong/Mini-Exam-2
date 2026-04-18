@@ -184,14 +184,29 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-25 {
+    gap: calc(var(--spacing) * 25);
   }
   .rounded-\[5px\] {
     border-radius: 5px;
@@ -230,6 +245,9 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[20px\] {
     font-size: 20px;
   }
@@ -242,12 +260,27 @@
   .text-\[26px\] {
     font-size: 26px;
   }
+  .text-\[34px\] {
+    font-size: 34px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
   .text-\[\#685ED6\] {
     color: #685ED6;
+  }
+  .text-\[\#685ed6\] {
+    color: #685ed6;
+  }
+  .text-\[3\] {
+    color: 3;
+  }
+  .text-\[white\] {
+    color: white;
+  }
+  .text-\[Подключить\] {
+    color: Подключить;
   }
   .text-white {
     color: var(--color-white);
@@ -267,6 +300,31 @@
   .lg\:hidden\! {
     @media (width >= 64rem) {
       display: none !important;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
+    }
+  }
+  .lg\:py-25 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 25);
+    }
+  }
+  .lg\:text-\[50px\] {
+    @media (width >= 64rem) {
+      font-size: 50px;
     }
   }
 }
